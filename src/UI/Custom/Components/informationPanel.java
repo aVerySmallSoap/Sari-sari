@@ -5,9 +5,12 @@ import UI.Interfaces.UserInterface;
 import javax.swing.*;
 import java.awt.*;
 
+@SuppressWarnings("SpellCheckingInspection")
 public class informationPanel extends JPanel implements UserInterface {
-    GridBagConstraints constraints = new GridBagConstraints();
+    final GridBagConstraints constraints = new GridBagConstraints();
+    @SuppressWarnings("CanBeFinal")
     String[] Columns = {"First Name","Middle Initial","Last Name", "Set"};
+    @SuppressWarnings("CanBeFinal")
     Object[][] fersons = {
             {"Lirys Nhoj Roben", "S.", "Belleza", "BSIT-1G"},
             {"Romel", "C.", "Cadungon", "BSIT-1G"},
@@ -15,8 +18,7 @@ public class informationPanel extends JPanel implements UserInterface {
             {"Khenjhie", "A.", "Apostol", "BSIT-1G"}
     };
 
-    @Override
-    public void initComponents() {
+    private void initComponents() {
         JLabel selectedProd = new JLabel("Selected Products:");
         JTable productsView = new JTable(fersons,Columns);
         JScrollPane tableScroller = new JScrollPane(productsView);

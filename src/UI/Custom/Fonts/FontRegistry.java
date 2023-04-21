@@ -3,9 +3,10 @@ package UI.Custom.Fonts;
 import java.awt.*;
 import java.io.IOException;
 import java.io.InputStream;
+@SuppressWarnings("SpellCheckingInspection")
 public class FontRegistry {
     //TODO:Automate
-    static GraphicsEnvironment graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
+    static final GraphicsEnvironment graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
 
     public static void registerRequiredFonts(){
         try{

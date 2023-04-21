@@ -1,16 +1,14 @@
 package UI.Custom.Components;
 
-import UI.Custom.Colors.Colors;
 import UI.Interfaces.UserInterface;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class ProductsPanel extends JPanel implements UserInterface {
-    GridBagConstraints constraints = new GridBagConstraints();
+    final GridBagConstraints constraints = new GridBagConstraints();
 
-    @Override
-    public void initComponents() {
+    private void initComponents() {
         JLabel products = new JLabel("Available Products:");
         JScrollPane productsScroller = new JScrollPane();
         JPanel listOfProducts = new JPanel(new GridLayout(0,3, 10,25));
@@ -41,7 +39,7 @@ public class ProductsPanel extends JPanel implements UserInterface {
         productsScroller.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         productsScroller.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
         productsScroller.setPreferredSize(new Dimension(400,400));
-        listOfProducts.setBackground(Colors.SECONDARY);
+        listOfProducts.setBackground(Color.white);
         listOfProducts.add(button1);
         listOfProducts.add(button2);
         listOfProducts.add(button3);

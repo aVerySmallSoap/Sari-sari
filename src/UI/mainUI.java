@@ -5,7 +5,6 @@ import UI.Custom.Components.ProductsPanel;
 import UI.Custom.Components.informationPanel;
 import UI.Custom.Fonts.FontRegistry;
 import UI.Interfaces.UserInterface;
-import com.formdev.flatlaf.FlatDarculaLaf;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -17,8 +16,7 @@ public class mainUI implements UserInterface {
         FontRegistry.registerRequiredFonts();
     }
 
-    @Override
-    public void initComponents() {
+    private void initComponents() {
         JFrame mainFrame = new JFrame();
         JPanel topWrapper = new JPanel(new BorderLayout());
         JPanel centerWrapper = new JPanel(new BorderLayout());
@@ -45,7 +43,7 @@ public class mainUI implements UserInterface {
 
         //Left
         centerWrapper.add(leftOnCenter, BorderLayout.WEST);
-        leftOnCenter.setBackground(Colors.SECONDARY);
+        leftOnCenter.setBackground(Color.white);
 
         //right
         centerWrapper.add(rightOnCenter, BorderLayout.CENTER);
