@@ -1,5 +1,6 @@
-package Database.Databases;
+package Tests;
 
+import Database.Databases.CustomersDB;
 import Database.Interfaces.IDatabaseConnector;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

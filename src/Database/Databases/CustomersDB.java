@@ -7,7 +7,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-class CustomersDB implements IDatabaseConnector {
+public class CustomersDB implements IDatabaseConnector {
     @Override
     public Connection getDatabaseConnection() {
         try{
